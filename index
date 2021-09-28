@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sHit (中国大陆) - 官方网站</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <style>
+            html {
+                font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            .card {
+                transition-property: box-shadow, transform;
+                transition: .3s;
+                margin-right: 20px;
+                border-radius: 18px;
+            }
+            .card:hover {
+                box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+                transform: scale3d(1.01,1.01,1.01);
+            }
+            .card-hstack {
+                vertical-align: top;
+                display: inline-flex;
+                overflow-x: scroll;
+                width: 100%;
+                padding-top: 10px;
+                padding-bottom: 40px;
+                margin-bottom: 54px;
+            }
+            .justify {
+                justify-content: space-between;
+            }
+            #container-title {
+                margin-top: 80px;
+                margin-bottom: 64px;
+            }
+            .card-placeholder {
+                min-width: 30px;
+                max-width: 30px;
+                height: 1px;
+            }
+            .goods-card {
+                background-repeat: no-repeat;
+                background-size: 300px 375px;
+                min-width: 300px;
+                max-width: 300px;
+                height: 375px;
+            }
+            .goods-card * {
+                text-shadow: 0 0 5px rgba(255,255,255,.84);
+            }
+            @media (min-width: 576px) {
+                .card-placeholder {
+                    min-width: 60px;
+                    max-width: 60px;
+                }
+                .goods-card {
+                    background-size: 400px 500px;
+                    min-width: 400px;
+                    max-width: 400px;
+                    height: 500px;
+                }
+            }
+            .color-point {
+                width: 12px;
+                height: 12px;
+                border-radius: 6px;
+                display: inline-block;
+                box-shadow: 0 0 1px .5px rgba(0,0,0,.16);
+                margin-right: 6px;
+            }
+            footer {
+                margin-top: 34px;
+                margin-bottom: 21px;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <header class="p-1 bg-secondary text-white">
+            <div class="container col-8">
+                <p class="my-1 col-12 text-end">&lt;广告&gt;</p>
+            </div>
+        </header>
+        <header class="p-1 bg-dark text-white">
+            <div class="container col-8 d-block d-sm-none">
+                <ul class="nav col-12 col-md-auto mb-2 mb-md-0 justify">
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="bi-list"></i></a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white"><i class="far fa-poo"></i></a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white"><i class="bi-bag"></i></a></li>
+                </ul>
+            </div>
+            <div class="container col-8 d-none d-sm-block">
+                <ul class="nav col-12 col-md-auto mb-2 mb-md-0 justify">
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white"><i class="far fa-poo"></i></a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white">iShit</a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white">iPee</a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white">iPoo</a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white">拉屎支持</a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white"><i class="bi-search"></i></a></li>
+                    <li><a href="javascript: void();" class="nav-link px-2 text-white"><i class="bi-bag"></i></a></li>
+                </ul>
+            </div>
+        </header>
+        <header class="p-1 bg-body">
+            <div class="container col-8">
+                <p class="my-1 col-12 text-center">
+                    <a href="javascript: void();">在线选购</a>，享受免费送纸、Shitist 专家支持、分期拉屎等服务。
+                </p>
+            </div>
+        </header>
+        <div class="offcanvas offcanvas-top bg-dark text-white" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel"><i class="bi-cloud-arrow-down-fill"></i> sHit</h5>
+                <a data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi-x-lg"></i></a>
+            </div>
+            <div class="offcanvas-body">
+                <div class="input-group mb-3" id="search-group">
+                    <input type="text" class="form-control bg-dark text-white border-secondary" id="search-input" placeholder="搜索 shit.com.cn" aria-label="搜索 shit.com.cn">
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="javascript: void();" class="list-group-item list-group-item-action bg-dark text-white">iShit</a>
+                    <a href="javascript: void();" class="list-group-item list-group-item-action bg-dark text-white">iPee</a>
+                    <a href="javascript: void();" class="list-group-item list-group-item-action bg-dark text-white">iPoo</a>
+                    <a href="javascript: void();" class="list-group-item list-group-item-action bg-dark text-white">拉屎支持</a>
+                </div>
+            </div>
+        </div>
+        <div id="toast-container"></div>
+        <div class="container-fluid">
+            <div class="container" id="container-title">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <h1>这个商店，<span class="text-secondary">产品都称心，屎意更如意。</span></h1>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light"><small>
+                                <i class="bi-emoji-heart-eyes"></i> 需要协助选购？<br />
+                                <a id="shitist-advice" href="javascript: void();">咨询 Shitist 专家</a>
+                            </small></li>
+                            <li class="list-group-item bg-light"><small>
+                                <i class="bi-door-open"></i> 前往厕所<br />
+                                <a href="javascript: void();">查找附近的公共厕所 ></a>
+                            </small></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Goods will be generated here -->
+            <div class="container" id="footnote">
+                <p class="text-secondary"><small>
+                    1. 实际折抵金额取决于产品的状况、配置、制造年份，以及发售国家或地区。在线换购和店内换购的折抵金额可能有所不同。年满 18 周岁及以上者才可参与本计划。该服务可能仅在部分公共厕所提供。并非所有产品都符合折抵换购条件。sHit 或其折抵服务合作伙伴保留出于任何原因拒绝或限制任何产品 (及其数量) 的权利。厕内折抵需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。现有产品的折抵金额可用于冲抵购买新的 sHit 产品。可能需要遵守 sHit 或 sHit 折抵服务合作伙伴的其他条款。
+                </small></p>
+            </div>
+            <hr />
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript: void();"><i class="far fa-poo"></i></a></li>
+                        <li class="breadcrumb-item active" aria-current="page">sHit Store</li>
+                    </ol>
+                </nav>
+                <div class="d-none d-sm-block">
+                    <div class="row" id="navigation-lg">
+                    </div>
+                </div>
+                <div class="d-block d-sm-none">
+                    <div class="accordion accordion-flush" id="navigation-sm">
+                    </div>
+                </div>
+                <footer class="text-secondary"><small>
+                    更多选购方式：<a href="javascript: void();">查找你附近的 sHit Store 零售厕所</a>，或者致电 114-514-1919。
+                    <hr />
+                    <div class="hstack gap-3">
+                        <div>Copyleft © 2021 sHit Inc. 保留没有权利。</div>
+                        <a href="javascript: void();" class="link-secondary">隐私政策</a>
+                        <a href="javascript: void();" class="link-secondary">使用条款</a>
+                        <a href="javascript: void();" class="link-secondary">销售政策</a>
+                        <a href="javascript: void();" class="link-secondary">法律信息</a>
+                        <a href="javascript: void();" class="link-secondary">网站地图</a>
+                      </div>
+                </small></footer>
+            </div>
+        </div>
+        <script src="js/popper.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+        let toast = [
+            "亲亲您好，请问有什么可以帮你？哦你不能回复我，那没事了",
+            "我作为一个，一个就是 sHit Store 的，的一个 Shitist 专家，就是说呢，您需要给我的服务进行一个评分，评分就是，就是说我这边呢，这边就是要给到您一个服务，然后呢，我这边就会给您一个评分投票",
+            "亲亲您好，这边建议您全部都买下来呢亲",
+            "如果您一次能排出五斤宿便的话呢，这边建议您购买 iTolet Pro Max 呢亲",
+            "不买立省 100% 呢亲",
+            "锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫烫",
+            "如果觉得太贵的话可以邀请好友帮忙砍价呢，新用户砍得更多哦",
+            "iRoll 现有星光色和远峰蓝色可选哦"
+        ]
+        let good = [
+            {
+                "title": "上新了，",
+                "subtitle": "一睹为快。",
+                "content": [
+                    {
+                        "info": "新款",
+                        "name": "iRoll",
+                        "slogan": "硬核的软",
+                        "price": "RMB 9.9 起",
+                        "img": "iroll_card.png"
+                    }, {
+                        "info": "新款",
+                        "name": "iTolet Pro Max",
+                        "slogan": "事事拿手，轻松入屎。",
+                        "price": "RMB 2999 起，还可折抵换购<sup>1</sup>",
+                        "img": "itolet_card.png"
+                    }, {
+                        "info": "新款",
+                        "name": "sBin",
+                        "slogan": "满地拉屎这门绝技，<br />要失传了。",
+                        "price": "RMB 49 起",
+                        "img": "sbin_card.png"
+                    }, {
+                        "info": "新款",
+                        "name": "iPlunger",
+                        "slogan": "再一次，吸入一切。",
+                        "price": "RMB 59 起",
+                        "img": "iplunger_card.png"
+                    }
+                ]
+            }, {
+                "title": "各种配件，",
+                "subtitle": "款款必备，和你的厕所绝配。",
+                "content": [
+                    {
+                        "info": "新款",
+                        "infoColor": "warning",
+                        "name": "iTolet Pro Max 专用粘贴式毛绒保护垫 - 灰粉色",
+                        "nameLevel": 5,
+                        "color": [
+                            { "name": "灰粉色", "hex": "#f4dfd9" },
+                            { "name": "星光色", "hex": "#faf7f4" },
+                            { "name": "金盏花色", "hex": "#f3ad7d" },
+                            { "name": "柚粉色", "hex": "#eb897b" },
+                            { "name": "远峰蓝色", "hex": "#b2c5d9" },
+                            { "name": "苜蓿草色", "hex": "#586957" },
+                            { "name": "午夜色", "hex": "#42474c" }
+                        ],
+                        "price": "RMB 49",
+                        "img": "itolet_seat_card.png"
+                    }, {
+                        "info": "新款",
+                        "infoColor": "warning",
+                        "name": "适用于 iTolet、iTolet Pro、iTolet Pro Max 的清洁抑菌剂 - 松木雅香型",
+                        "nameLevel": 5,
+                        "price": "RMB 29",
+                        "img": "itolet_cleaner_card.png"
+                    }
+                ]
+            }
+        ]
+        let navigation = [
+            {
+                "title": "选购及了解",
+                "content": [
+                    {
+                        "title": "iTolet",
+                        "href": ""
+                    }, {
+                        "title": "iRoll",
+                        "href": ""
+                    }, {
+                        "title": "sBin",
+                        "href": ""
+                    }, {
+                        "title": "iPlunge",
+                        "href": ""
+                    }, {
+                        "title": "配件",
+                        "href": ""
+                    }
+                ]
+            }, {
+                "title": "sHit Store 零售厕所",
+                "content": [
+                    {
+                        "title": "查找蜜雪冰城",
+                        "href": ""
+                    }, {
+                        "title": "在线选购",
+                        "href": ""
+                    }, {
+                        "title": "Live House 天菜吧",
+                        "href": ""
+                    }, {
+                        "title": "Today at 茶百道",
+                        "href": ""
+                    }, {
+                        "title": "喜茶 Trade In 换购计划",
+                        "href": ""
+                    }, {
+                        "title": "分期拉屎",
+                        "href": ""
+                    }
+                ]
+            }, {
+                "title": "教育应用",
+                "content": [
+                    {
+                        "title": "宝宝巴士",
+                        "href": "//www.babybus.com/"
+                    }, {
+                        "title" : "绝绝子生成器",
+                        "href": "//kingcos.me/jjz/"
+                    }, {
+                        "title" : "申论生成器",
+                        "href": "//sojo.im/slscq/"
+                    }, {
+                        "title" : "狗屁不通文章生成器",
+                        "href": "//suulnnka.github.io/BullshitGenerator/"
+                    }, {
+                        "title" : "营销号生成器",
+                        "href": "//maorx.cn/yxh/"
+                    }
+                ]
+            }, {
+                "title": "商务应用",
+                "content": [
+                    {
+                        "title": "批哩批哩",
+                        "href": "//bilibili.com/"
+                    }
+                ]
+            }
+        ]
+        // 屎山 starts here
+        good.forEach((item, index) => {
+            let html = `
+            <div class="container">
+                <h3>${item.title}<span class="text-secondary">${item.subtitle}</span></h3>
+            </div>
+            <div class="card-hstack">
+                <div class="card-placeholder"></div>`;
+            item.content.forEach((item, index) => {
+                html += `
+                <div class="card goods-card" style="background-image: url(img/${item.img});">
+                    <div class="card-body">
+                        <h6 class="card-title text-${item.infoColor ? item.infoColor : "secondary"}"><small>${item.info}</small></h6>
+                        <p class="card-text">
+                            ${item.nameLevel ? `<h${item.nameLevel}>${item.name}</h${item.nameLevel}>` : `<h4>${item.name}</h4>`}
+                            <h4>${item.slogan ? item.slogan : ""}</h4>`;
+                if ("color" in item) {
+                    html += `<div>`;
+                    item.color.forEach((item) => {
+                        html += `<div class="color-point" style="background-color: ${item.hex};" data-bs-toggle="tooltip" data-bs-placement="top" title="${item.name}"></div>`;
+                    });
+                    html += `</div>`;
+                }
+                html += `${item.price}</p></div></div>`;
+            });
+            $("#footnote").before(html + `<div class="card-placeholder"></div></div>`);
+        });
+        navigation.forEach((item, index) => {
+            let html = `<div class="list-group list-group-flush">`;
+            item.content.forEach((item) => {
+                html += `<a href="${item.href ? item.href : "javascript: void();"}" target="_blank" class="list-group-item bg-light">${item.title}</a>`;
+            });
+            $("#navigation-sm").append(`
+            <div class="accordion-item">
+                <h5 class="accordion-header" id="navigation-sm-${index}">
+                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navigation-sm-body-${index}" aria-expanded="false" aria-controls="#navigation-sm-body-${index}">${item.title}</button>
+                </h5>
+                <div id="navigation-sm-body-${index}" class="accordion-collapse collapse bg-light" aria-labelledby="navigation-sm-${index}">
+                    <div class="accordion-body">` + html + `</div></div></div></div>`);
+            $("#navigation-lg").append(`<div class="col-3"><h5>${item.title}</h5>` + html + `</div></div>`);
+        });
+        // Enable Tooltips and Toast Messages
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+        $("#shitist-advice").click(function () {
+            let toastMessage = document.createElement("div");
+            $(toastMessage).html(`
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="true">
+                    <div class="toast-header">
+                    <i class="bi-emoji-heart-eyes me-2"></i>
+                    <strong class="me-auto">Shitist 专家</strong>
+                    <small>刚刚</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">${toast[Math.floor(toast.length * Math.random())]}</div>
+                </div>
+            </div>`);
+            $("#toast-container").append(toastMessage);
+            new bootstrap.Toast(toastMessage).show();
+        });
+        </script>
+    </body>
+</html>
